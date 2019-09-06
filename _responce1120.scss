@@ -1,0 +1,179 @@
+@media screen and (max-width: 1120px) {
+    html {
+        font-size: 2vw;
+    }
+    header {
+        height: 70vw;
+        .brand {
+            // background: yellow;
+            height: 3.5rem;
+            .logo1 {
+                // background: yellow;
+                width: 100%;
+                img {
+                    margin-left: -1.5rem;
+                }
+            }
+            .logo2 {
+                display: none;
+            }
+            .logo3 {
+                width: 3.5rem;
+                height: 3.5rem;
+                // background: yellow;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                overflow: hidden;
+                align-items: center;
+                .line {
+                    width: 2.5rem;
+                    height: .2rem;
+                    background: black;
+                    display: block;
+                    margin: .2rem 0;
+                    position: relative;
+                }
+                .line:nth-child(1) {
+                    transition-delay: .1s;
+                    width: 1.5rem;
+                }
+                .line:nth-child(2) {
+                    background: red;
+                }
+                .line:nth-child(3) {
+                    transition-delay: .3s;
+                    width: 1.5rem;
+                }
+            }
+            .menu .line:nth-child(1) {
+                background: red;
+                transform: rotate(35deg);
+                margin: 0%;
+                transform-origin: center;
+                top: .4rem;
+            }
+            .menu .line:nth-child(3) {
+                transform: rotate(-35deg);
+                margin: 0%;
+                background: red;
+                transform-origin: center;
+                bottom: .4rem;
+            }
+            .menu .line:nth-child(2) {
+                left: -33rem;
+                opacity: 0;
+            }
+        }
+        .sliders {
+            top: 3.5rem;
+            .arrow {
+                width: 2rem;
+                height: 2rem;
+            }
+        }
+        .slideframe {
+            top: 4rem;
+        }
+    }
+    .showmenu {
+        width: calc(100vw - 4rem);
+        height: calc(100Vh - 3rem);
+    }
+    // .showsearch {
+    //     width: calc(100vw - 4.5rem);
+    //     height: calc(100vh - 3rem);
+    // }
+}
+
+@media screen and (max-width: 768px) {
+    .qlink {
+        width: 5rem;
+        height: 5rem;
+        ul {
+            li {
+                margin: 1rem 0;
+                a {
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+    .showmenu {
+        width: calc(100vw - 4rem);
+        height: calc(100Vh - 3rem);
+    }
+    .social {
+        right: 7.5rem;
+        .slink {
+            width: 3.5rem;
+            height: 3.5rem;
+        }
+    }
+    #searchupcover {
+        width: 5rem;
+        height: 5rem;
+    }
+    .animation {
+        #anivideo {
+            // justify-content: space-evenly;
+            #videos {
+                width: 45%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .recent {
+        .recentframe {
+            width: 100%;
+            padding: 3rem 0;
+            .recent_video {
+                width: 90%;
+            }
+        }
+    }
+    .animation {
+        #anivideo {
+            width: 100%;
+            #videos {
+                width: 100%;
+            }
+        }
+    }
+    #about {
+        flex-direction: column;
+        padding: 0%;
+        justify-content: space-between;
+        #pic {
+            background-image: url('https://images.unsplash.com/photo-1485199692108-c3b5069de6a0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80');
+            width: 100%;
+            height: 25rem;
+            background-size: cover;
+            left: 0;
+            top: 0%;
+            #img {
+                display: none;
+            }
+        }
+        #aboutus {
+            width: 90%;
+            left: 5%;
+            right: 0;
+            margin: 1.5rem 0;
+        }
+    }
+    footer {
+        .shortlink {
+            flex-direction: column;
+            ul {
+                width: 90%;
+                // border: .1rem solid white;
+                position: relative;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+    }
+}

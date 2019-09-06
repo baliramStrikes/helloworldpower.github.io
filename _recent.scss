@@ -1,0 +1,130 @@
+.recent {
+    width: 100%;
+    padding: 5rem 0;
+    h1 {
+        text-align: center;
+        font-size: 2rem;
+        text-transform: uppercase;
+        color: red;
+        &::first-letter {
+            font-size: 3rem;
+            color: black;
+        }
+        span {
+            font-weight: lighter;
+            font-size: 1rem;
+            text-transform: lowercase;
+            padding-left: 10rem;
+            padding-top: .5rem;
+            border-top: .2rem solid black;
+            color: black;
+        }
+    }
+    .recentframe {
+        width: 90%;
+        border: .2rem solid red;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        box-sizing: border-box;
+        margin-top: 8rem;
+        padding: 5rem 0;
+        .recent_video {
+            box-shadow: 0 0 .5rem black;
+            width: 70%;
+            overflow: hidden;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            margin-top: -10rem;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .tools {
+            // border: .1rem solid black;
+            // height: 2rem;
+            // width: 10rem;
+            padding: 0 1rem;
+            position: absolute;
+            bottom: -3rem;
+            box-sizing: border-box;
+            right: 5rem;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: flex-start;
+            a {
+                padding: .5rem .5rem;
+                // display: inline-block;
+                border: .1rem solid black;
+                background: white;
+                box-sizing: border-box;
+                text-transform: uppercase;
+                text-decoration: none;
+                color: red;
+                transition: .5s;
+                &:hover {
+                    box-shadow: .2rem .2rem .2rem black;
+                    color: white;
+                    background: red;
+                }
+            }
+            .heart {
+                width: 4rem;
+                height: 4rem;
+                background: white;
+                margin: 0 1rem;
+                border: .1rem solid black;
+                box-sizing: border-box;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: .5s;
+                &:hover {
+                    box-shadow: .2rem .2rem .2rem black;
+                }
+                span {
+                    width: 2rem;
+                    height: 2.5rem;
+                    background: red;
+                    display: block;
+                    position: relative;
+                    top: -.3rem;
+                    border-top-right-radius: 50%;
+                    border-top-left-radius: 50%;
+                    transition: .5s;
+                }
+                #leftH {
+                    transform: rotate(-45deg);
+                    left: .7rem;
+                }
+                #rightH {
+                    transform: rotate(45deg);
+                    right: .7rem;
+                }
+            }
+            .download {
+                width: 3rem;
+                height: 3rem;
+                background: white;
+                border: .1rem solid black;
+                box-sizing: border-box;
+                transition: .5s;
+                &:hover {
+                    box-shadow: .2rem .2rem .2rem black;
+                    color: white;
+                }
+                img {
+                    width: 70%;
+                    height: 70%;
+                    position: relative;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%, -50%) rotate(90deg);
+                }
+            }
+        }
+    }
+}
