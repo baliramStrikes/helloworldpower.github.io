@@ -28,7 +28,7 @@ firstfind.addEventListener('click', function() {
     } else {
         show.classList.add('showmenu');
         findid.style.display = 'block';
-        searhcoverimg.src = 'close2.png';
+        searhcoverimg.src = 'Group 310.png';
     }
 
 });
@@ -40,8 +40,16 @@ searchcover.addEventListener('click', function() {
         } else {
             show.classList.add('showmenu');
             findid.style.display = 'block';
-            searhcoverimg.src = 'close2.png';
+            searhcoverimg.src = 'Group 310.png';
         }
     })
-    // console.log(show.childNodes);
-    // console.log((searhcoverimg).src = 'close2.png');
+    // console.log(show.childNodes);//
+    // console.log((searhcoverimg).src = 'close2.png');//
+
+
+var color = document.getElementById('left');
+
+function plusSlides() {
+    color.style.background = 'blue';
+
+}

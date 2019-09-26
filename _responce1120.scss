@@ -108,6 +108,13 @@
         .slink {
             width: 3.5rem;
             height: 3.5rem;
+            i {
+                line-height: 3.5rem;
+                font-size: 2rem;
+            }
+            &:hover {
+                height: 5rem;
+            }
         }
     }
     #searchupcover {

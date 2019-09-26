@@ -1,0 +1,227 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: 'Ruthie', cursive;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+body span {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(-30deg);
+          transform: translate(-50%, -50%) rotate(-30deg);
+  text-transform: capitalize;
+  font-size: 20rem;
+}
+
+body span:nth-child(2) {
+  width: 100%;
+  text-align: center;
+  color: red;
+  opacity: .2;
+  -webkit-animation: blink 1s linear infinite;
+          animation: blink 1s linear infinite;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    color: red;
+  }
+  50% {
+    color: black;
+  }
+}
+
+@keyframes blink {
+  0% {
+    color: red;
+  }
+  50% {
+    color: black;
+  }
+}
+
+body span:nth-child(1) {
+  top: 30%;
+  left: 30%;
+  opacity: .5;
+}
+
+body form {
+  width: 25%;
+  height: 80%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body form input,
+body form a {
+  margin: 1rem 0;
+  width: 100%;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  padding: .5rem;
+  font-weight: bold;
+  color: red;
+  font-family: 'Arizonia', cursive;
+  letter-spacing: .1rem;
+  outline: none;
+  border: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 2rem;
+  -webkit-box-shadow: .2rem .2rem .2rem red;
+          box-shadow: .2rem .2rem .2rem red;
+}
+
+body form input::-webkit-input-placeholder,
+body form a::-webkit-input-placeholder {
+  font-weight: lighter;
+}
+
+body form input:-ms-input-placeholder,
+body form a:-ms-input-placeholder {
+  font-weight: lighter;
+}
+
+body form input::-ms-input-placeholder,
+body form a::-ms-input-placeholder {
+  font-weight: lighter;
+}
+
+body form input::placeholder,
+body form a::placeholder {
+  font-weight: lighter;
+}
+
+body form button {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  position: relative;
+  margin-top: 5rem;
+  background: white;
+  -webkit-box-shadow: 0 0 .2rem red;
+          box-shadow: 0 0 .2rem red;
+  -webkit-transition: .5s;
+  transition: .5s;
+  cursor: pointer;
+}
+
+body form button:hover {
+  -webkit-box-shadow: .2rem .2rem .2rem red;
+          box-shadow: .2rem .2rem .2rem red;
+}
+
+body form button img {
+  width: 70%;
+  height: 70%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+body form a {
+  text-align: right;
+  text-decoration: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+body form a:hover {
+  color: black;
+}
+
+body .cover {
+  width: 50%;
+  height: 8rem;
+  background: red;
+  position: fixed;
+  bottom: 0%;
+  right: 0%;
+  -webkit-clip-path: polygon(8% 70%, 100% 0, 100% 100%, 0 100%);
+          clip-path: polygon(8% 70%, 100% 0, 100% 100%, 0 100%);
+}
+
+body .cover2 {
+  width: 13rem;
+  height: 13rem;
+  background: #505050;
+  -webkit-clip-path: polygon(100% 0, 0 100%, 100% 100%);
+          clip-path: polygon(100% 0, 0 100%, 100% 100%);
+}
+
+body a img {
+  width: 2rem;
+  height: 2rme;
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+}
+
+@media only screen and (max-width: 900px) {
+  body span {
+    font-size: 15rem;
+  }
+  body form {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  body .cover2 {
+    width: 10rem;
+    height: 10rem;
+  }
+  body #cover {
+    height: 7rem;
+  }
+  body span {
+    opacity: .05;
+    font-size: 10rem;
+  }
+  body form button {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
+@media only screen and (max-width: 448px) {
+  body span:nth-child(2) {
+    font-size: 8rem;
+  }
+  body form {
+    width: 80%;
+  }
+  body #cover {
+    width: 80%;
+  }
+}
+/*# sourceMappingURL=signup.css.map */

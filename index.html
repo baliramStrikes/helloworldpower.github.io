@@ -5,24 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>PERSONAL WORK</title>
+    <link rel="icon" href="brand.png" type="image/png">
+    <title>HELLOWORLD POWER</title>
     <link rel="stylesheet" href="index.css">
     <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arizonia|Ruthie&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css" integrity="sha256-piqEf7Ap7CMps8krDQsSOTZgF+MU/0MPyPW2enj5I40=" crossorigin="anonymous" />
 </head>
 
 <body>
     <header>
         <div class="brand">
             <div class="logo1">
-                <img src="brand.png" alt="">
+                <a href="index.html">
+
+                    <img src="brand.png" alt="">
+                </a>
             </div>
             <ul class="logo2">
-                <li><a href="http://" target="_blank" rel="noopener noreferrer">recent</a></li>
-                <li><a href="http://" target="_blank" rel="noopener noreferrer">animation</a></li>
-                <li>
-                    <a href="http://" target="_blank" rel="noopener noreferrer">hover effect</a></li>
-                <li><a href="http://" target="_blank" rel="noopener noreferrer">webtemplate</a></li>
-                <li><a href="http://" target="_blank" rel="noopener noreferrer">about us</a></li>
+                <li><a href="index.html" rel="noopener noreferrer">home</a></li>
+                <li><a href="http://" rel="noopener noreferrer">profile</a></li>
+                <li><a href="#aboutus" rel="noopener noreferrer">about us</a></li>
+                <li><a href="signup.html" rel="noopener noreferrer">sign up</a></li>
+                <li><a href="login.html" rel="noopener noreferrer">sign in</a></li>
             </ul>
             <div class="logo3">
                 <span class="line"></span>
@@ -31,17 +36,25 @@
             </div>
         </div>
         <div class="sliders">
-            <img src="slidepic1.jpg" alt="">
-            <div class="arrow" id="left"><img src="arrow2.png" alt=""></div>
-            <div class="arrow" id="right"><img src="arrow2.png" alt=""></div>
+
+
+            <div class="mySlides fade">
+                <img src="slidepic1.jpg" alt="">
+            </div>
+
+
+
+            <div class="arrow prev" id="left"><img src="arrow2.png" alt="" onclick="plusSlides()"></div>
+
+            <div class="arrow next" id="right" onclick="plusSlides(1)"><img src="arrow2.png" alt=""></div>
         </div>
         <div class="slideframe">
             <div class="position">
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
             </div>
             <div class="find" id="firstfind">
                 <input type="text" name="searchbar" id="searchbar" class="search">
@@ -74,12 +87,12 @@
         </div>
     </div>
     <div class="social">
-        <div class="slink"></div>
-        <div class="slink"></div>
-        <div class="slink"></div>
-        <div class="slink"></div>
-        <div class="slink"></div>
-        <div class="slink"></div>
+        <div class="slink"><i class="fab fa-youtube"></i></div>
+        <div class="slink"><i class="fab fa-facebook-f"></i></div>
+        <div class="slink"><i class="fab fa-github-alt"></i></div>
+        <div class="slink"><i class="fab fa-instagram"></i></div>
+        <div class="slink"><i class="fas fa-id-card-alt"></i></div>
+        <div class="slink"><i class="fas fa-adjust"></i></div>
     </div>
     <div id="searchupcover">
         <img src="Group 1.png" alt="" id="serchcovimg">
@@ -98,7 +111,7 @@
                 <img src="thumb1.jpg" alt="">
             </div>
             <div class="tools">
-                <a href="#">source code</a>
+                <a href="show.html">source code</a>
                 <div class="heart">
                     <span id="leftH"></span>
                     <span id="rightH"></span>
@@ -111,7 +124,16 @@
     </section>
 
     <section class="animation">
-        <h1>animation</h1>
+        <div class="menuhead">
+            <a href="#">web template</a>
+            <a href="#">web template</a>
+            <a href="#">web template</a>
+            <a href="#">web template</a>
+            <a href="#">web template</a>
+            <a href="#">web template</a>
+            <a href="#">web template</a>
+            <a href="#">web template</a>
+        </div>
         <div class="anivideo" id="anivideo">
             <div class="videos" id="videos">
                 <img src="thumb1.jpg" alt="">
@@ -152,15 +174,267 @@
                 <div class="thumbnel">
                     <h1>source code</h1>
                 </div>
+            </div>
+            <div class="videos" id="videos">
+                <img src="thumb1.jpg" alt="">
+                <div class="thumbnel">
+                    <h1>source code</h1>
+                </div>
+            </div>
+            <div class="videos" id="videos">
+                <img src="thumb2.jpeg" alt="">
+                <div class="thumbnel">
+                    <h1>source code</h1>
+                </div>
+            </div>
+            <div class="videos" id="videos">
+                <img src="thumb3.jpg" alt="">
+                <div class="thumbnel">
+                    <h1>source code</h1>
+                </div>
+            </div>
+            <div class="videos" id="videos">
+                <img src="thumb4.jpg" alt="">
+                <div class="thumbnel">
+                    <h1>source code</h1>
+                </div>
+            </div>
+            <div class="videos" id="videos">
+                <img src="thumb5.jpg" alt="">
+                <div class="thumbnel">
+                    <h1>source code</h1>
+                </div>
+            </div>
+            <div class="videos" id="videos">
+                <img src="thumb6.jpg" alt="">
+                <div class="thumbnel">
+                    <h1>source code</h1>
+                </div>
+            </div>
+            <div class="videos" id="videos">
+                <img src="thumb1.jpg" alt="">
+                <div class="thumbnel">
+                    <h1>source code</h1>
+                </div>
+            </div>
+            <div class="videos" id="videos">
+                <img src="thumb2.jpeg" alt="">
+                <div class="thumbnel">
+                    <h1>source code</h1>
+                </div>
+            </div>
+            <div class="videos" id="videos">
+                <img src="thumb3.jpg" alt="">
+                <div class="thumbnel">
+                    <h1>source code</h1>
+                </div>
+            </div>
+            <div class="videos" id="videos">
+                <img src="thumb4.jpg" alt="">
+                <div class="thumbnel">
+                    <h1>source code</h1>
+                </div>
+            </div>
+            <div class="videos" id="videos">
+                <img src="thumb5.jpg" alt="">
+                <div class="thumbnel">
+                    <h1>source code</h1>
+                </div>
+            </div>
+            <div class="videos" id="videos">
+                <img src="thumb6.jpg" alt="">
+                <div class="thumbnel">
+                    <h1>source code</h1>
+                </div>
+            </div>
+            <div class="videos" id="videos">
+                <img src="thumb1.jpg" alt="">
+                <div class="thumbnel">
+                    <h1>source code</h1>
+                </div>
+            </div>
+            <div class="videos" id="videos">
+                <img src="thumb2.jpeg" alt="">
+                <div class="thumbnel">
+                    <h1>source code</h1>
+                </div>
 
             </div>
-        </div>
-        <a href="#">see more</a>
-        <div class="line"></div>
-    </section>
-    <section class="animation">
-        <h1>hover effects</h1>
-        <div class="anivideo" id="anivideo">
+            <div class="videos" id="videos">
+                <img src="thumb3.jpg" alt="">
+                <div class="thumbnel">
+                    <h1>source code</h1>
+                </div>
+
+            </div>
+            <div class="videos" id="videos">
+                <img src="thumb4.jpg" alt="">
+                <div class="thumbnel">
+                    <h1>source code</h1>
+                </div>
+
+            </div>
+            <div class="videos" id="videos">
+                <img src="thumb5.jpg" alt="">
+                <div class="thumbnel">
+                    <h1>source code</h1>
+                </div>
+
+            </div>
+            <div class="videos" id="videos">
+                <img src="thumb6.jpg" alt="">
+                <div class="thumbnel">
+                    <h1>source code</h1>
+                </div>
+            </div>
+            <div class="videos" id="videos">
+                <img src="thumb1.jpg" alt="">
+                <div class="thumbnel">
+                    <h1>source code</h1>
+                </div>
+            </div>
+            <div class="videos" id="videos">
+                <img src="thumb2.jpeg" alt="">
+                <div class="thumbnel">
+                    <h1>source code</h1>
+                </div>
+            </div>
+            <div class="videos" id="videos">
+                <img src="thumb3.jpg" alt="">
+                <div class="thumbnel">
+                    <h1>source code</h1>
+                </div>
+            </div>
+            <div class="videos" id="videos">
+                <img src="thumb4.jpg" alt="">
+                <div class="thumbnel">
+                    <h1>source code</h1>
+                </div>
+            </div>
+            <div class="videos" id="videos">
+                <img src="thumb5.jpg" alt="">
+                <div class="thumbnel">
+                    <h1>source code</h1>
+                </div>
+            </div>
+            <div class="videos" id="videos">
+                <img src="thumb6.jpg" alt="">
+                <div class="thumbnel">
+                    <h1>source code</h1>
+                </div>
+            </div>
+            <div class="videos" id="videos">
+                <img src="thumb1.jpg" alt="">
+                <div class="thumbnel">
+                    <h1>source code</h1>
+                </div>
+            </div>
+            <div class="videos" id="videos">
+                <img src="thumb2.jpeg" alt="">
+                <div class="thumbnel">
+                    <h1>source code</h1>
+                </div>
+            </div>
+            <div class="videos" id="videos">
+                <img src="thumb3.jpg" alt="">
+                <div class="thumbnel">
+                    <h1>source code</h1>
+                </div>
+            </div>
+            <div class="videos" id="videos">
+                <img src="thumb4.jpg" alt="">
+                <div class="thumbnel">
+                    <h1>source code</h1>
+                </div>
+            </div>
+            <div class="videos" id="videos">
+                <img src="thumb5.jpg" alt="">
+                <div class="thumbnel">
+                    <h1>source code</h1>
+                </div>
+            </div>
+            <div class="videos" id="videos">
+                <img src="thumb6.jpg" alt="">
+                <div class="thumbnel">
+                    <h1>source code</h1>
+                </div>
+            </div>
+            <div class="videos" id="videos">
+                <img src="thumb1.jpg" alt="">
+                <div class="thumbnel">
+                    <h1>source code</h1>
+                </div>
+            </div>
+            <div class="videos" id="videos">
+                <img src="thumb2.jpeg" alt="">
+                <div class="thumbnel">
+                    <h1>source code</h1>
+                </div>
+
+            </div>
+            <div class="videos" id="videos">
+                <img src="thumb3.jpg" alt="">
+                <div class="thumbnel">
+                    <h1>source code</h1>
+                </div>
+
+            </div>
+            <div class="videos" id="videos">
+                <img src="thumb4.jpg" alt="">
+                <div class="thumbnel">
+                    <h1>source code</h1>
+                </div>
+
+            </div>
+            <div class="videos" id="videos">
+                <img src="thumb5.jpg" alt="">
+                <div class="thumbnel">
+                    <h1>source code</h1>
+                </div>
+
+            </div>
+            <div class="videos" id="videos">
+                <img src="thumb6.jpg" alt="">
+                <div class="thumbnel">
+                    <h1>source code</h1>
+                </div>
+            </div>
+            <div class="videos" id="videos">
+                <img src="thumb1.jpg" alt="">
+                <div class="thumbnel">
+                    <h1>source code</h1>
+                </div>
+            </div>
+            <div class="videos" id="videos">
+                <img src="thumb2.jpeg" alt="">
+                <div class="thumbnel">
+                    <h1>source code</h1>
+                </div>
+            </div>
+            <div class="videos" id="videos">
+                <img src="thumb3.jpg" alt="">
+                <div class="thumbnel">
+                    <h1>source code</h1>
+                </div>
+            </div>
+            <div class="videos" id="videos">
+                <img src="thumb4.jpg" alt="">
+                <div class="thumbnel">
+                    <h1>source code</h1>
+                </div>
+            </div>
+            <div class="videos" id="videos">
+                <img src="thumb5.jpg" alt="">
+                <div class="thumbnel">
+                    <h1>source code</h1>
+                </div>
+            </div>
+            <div class="videos" id="videos">
+                <img src="thumb6.jpg" alt="">
+                <div class="thumbnel">
+                    <h1>source code</h1>
+                </div>
+            </div>
             <div class="videos" id="videos">
                 <img src="thumb1.jpg" alt="">
                 <div class="thumbnel">
@@ -198,50 +472,7 @@
                 </div>
             </div>
         </div>
-        <a href="#">see more</a>
-        <div class="line"></div>
-    </section>
-    <section class="animation">
-        <h1>web templates</h1>
-        <div class="anivideo" id="anivideo">
-            <div class="videos" id="videos">
-                <img src="thumb1.jpg" alt="">
-                <div class="thumbnel">
-                    <h1>source code</h1>
-                </div>
-            </div>
-            <div class="videos" id="videos">
-                <img src="thumb2.jpeg" alt="">
-                <div class="thumbnel">
-                    <h1>source code</h1>
-                </div>
-            </div>
-            <div class="videos" id="videos">
-                <img src="thumb3.jpg" alt="">
-                <div class="thumbnel">
-                    <h1>source code</h1>
-                </div>
-            </div>
-            <div class="videos" id="videos">
-                <img src="thumb4.jpg" alt="">
-                <div class="thumbnel">
-                    <h1>source code</h1>
-                </div>
-            </div>
-            <div class="videos" id="videos">
-                <img src="thumb5.jpg" alt="">
-                <div class="thumbnel">
-                    <h1>source code</h1>
-                </div>
-            </div>
-            <div class="videos" id="videos">
-                <img src="thumb6.jpg" alt="">
-                <div class="thumbnel">
-                    <h1>source code</h1>
-                </div>
-            </div>
-        </div>
-        <a href="#">see more</a>
+        <a href="#" class="seemore">see more</a>
         <div class="line"></div>
     </section>
 
@@ -250,8 +481,8 @@
     <article>
         <h1>be conacted</h1>
         <div class="signlog">
-            <a href="#">sign in</a>
-            <a href="#">sign up</a>
+            <a href="login.html">sign in</a>
+            <a href="signup.html" style="font-family: 'Arizonia', cursive; text-transform: capitalize;">sign up</a>
         </div>
     </article>
 
@@ -272,27 +503,27 @@
     <footer>
         <div class="social2">
             <div class="sociallink">
-                <div class="squre1"></div>
+                <div class="squre1"><i class="fab fa-youtube"></i></div>
                 <div class="squre2"></div>
             </div>
             <div class="sociallink">
-                <div class="squre1"></div>
+                <div class="squre1"><i class="fab fa-facebook-f"></i></div>
                 <div class="squre2"></div>
             </div>
             <div class="sociallink">
-                <div class="squre1"></div>
+                <div class="squre1"><i class="fab fa-github-alt"></i></div>
                 <div class="squre2"></div>
             </div>
             <div class="sociallink">
-                <div class="squre1"></div>
+                <div class="squre1"><i class="fab fa-instagram"></i></div>
                 <div class="squre2"></div>
             </div>
             <div class="sociallink">
-                <div class="squre1"></div>
+                <div class="squre1"><i class="fab fa-reddit-alien"></i></div>
                 <div class="squre2"></div>
             </div>
             <div class="sociallink">
-                <div class="squre1"></div>
+                <div class="squre1"><i class="fas fa-phone-alt"></i></div>
                 <div class="squre2"></div>
             </div>
         </div>

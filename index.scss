@@ -14,9 +14,6 @@ html {
      ::-webkit-scrollbar-thumb {
         background: red;
     }
-    // body {
-    //     background: rgb(56, 56, 56);
-    // }
 }
 
 header {
@@ -98,19 +95,26 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        img {
+        .mySlides {
             width: 100%;
             height: 100%;
-            object-fit: cover;
-            box-sizing: border-box;
-            // position: relative;
             position: absolute;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                box-sizing: border-box;
+                // position: relative;
+                position: absolute;
+            }
         }
         .arrow {
             width: 3rem;
             height: 3rem;
             background: white;
             position: relative;
+            top: 0%;
+            transition: .5s;
             img {
                 width: 70%;
                 height: 70%;
@@ -157,6 +161,10 @@ header {
                 // border: 2px solid red;
                 box-sizing: border-box;
                 margin: 0 5px;
+                transition: .5s;
+                &:hover {
+                    background: black;
+                }
             }
         }
         .find {
@@ -318,6 +326,7 @@ header {
     bottom: 2rem;
     right: 5.5rem;
     display: flex;
+    align-items: flex-end;
     .slink {
         width: 2rem;
         height: 2rem;
@@ -326,8 +335,46 @@ header {
         margin: 0% .5rem;
         box-sizing: border-box;
         transition: .5s;
+        position: relative;
+        cursor: pointer;
         &:hover {
             box-shadow: 0 0 .1rem black;
+            background: black;
+            // width: 2.2rem;
+            height: 3rem;
+        }
+        i {
+            width: 100%;
+            // font-weight: lighter;
+            font-size: 1.2rem;
+            text-align: center;
+            line-height: 2rem;
+            color: white;
+        }
+        &:hover::after {
+            content: 'youtube';
+            position: absolute;
+            color: white;
+            top: -2rem;
+            left: 0;
+            background: black;
+            padding: .2rem;
+            text-transform: capitalize;
+        }
+        &:hover:nth-child(2)::after {
+            content: 'facebook';
+        }
+        &:hover:nth-child(3)::after {
+            content: 'github';
+        }
+        &:hover:nth-child(4)::after {
+            content: 'instagram';
+        }
+        &:hover:nth-child(5)::after {
+            content: 'profile';
+        }
+        &:hover:nth-child(6)::after {
+            content: 'darkmode';
         }
     }
 }
